@@ -1,7 +1,7 @@
 System.config({
   "paths": {
     "*": "*.js",
-    "Books/*": "lib/*.js"
+    "books/*": "lib/*.js"
   }
 });
 
