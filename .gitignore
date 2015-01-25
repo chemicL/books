@@ -1,4 +1,6 @@
 .vagrant/
+
 jspm_packages/
+node_modules/
 
 .idea/

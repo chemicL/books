@@ -1,4 +1,10 @@
 {
+  "dependencies": {
+    "systemjs": "^0.11.3"
+  },
+  "devDependencies": {
+    "jspm": "^0.10.6"
+  },
   "jspm": {
     "name": "books",
     "dependencies": {
