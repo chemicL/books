@@ -3,7 +3,10 @@
     "systemjs": "^0.12"
   },
   "devDependencies": {
-    "jspm": "^0.11"
+    "del": "^1.1.1",
+    "gulp": "^3.8.10",
+    "jspm": "^0.11",
+    "systemjs-builder": "^0.6.0"
   },
   "jspm": {
     "name": "books",
