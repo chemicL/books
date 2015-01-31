@@ -1,10 +1,11 @@
 System.config({
   "paths": {
     "*": "*.js",
-    "books/*": "lib/*.js",
+    "books/*": "src/js/*.js",
     "github:*": "jspm_packages/github/*.js",
     "npm:*": "jspm_packages/npm/*.js"
-  }
+  },
+  "parser": "6to5"
 });
 
 System.config({
