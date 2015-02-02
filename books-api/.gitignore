@@ -1,0 +1,61 @@
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+*.bin
+*.pkl
+
+# Linux
+*.swp
+*~
+
+# OSX #
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IntelliJ Idea
+.idea
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+
+# Eclipse
+*.pydevproject
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*~.nib
+local.properties
+.settings/
+.loadpath
+.classpath
+.project
+*.launch
+.target
+
+# package files
+# *.jar ------ please remove the embedded libraries and use Maven repo
+*.war
+*.ear
+
+# Maven output
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle
+
+# Storm
+storm-local
