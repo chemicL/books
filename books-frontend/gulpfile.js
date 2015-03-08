@@ -5,7 +5,8 @@ var Builder = require('systemjs-builder'),
     path = require('path'),
     rev = require('gulp-rev'),
     revNapkin = require('gulp-rev-napkin'),
-    revReplace = require('gulp-rev-replace');
+    revReplace = require('gulp-rev-replace'),
+    uglify = require('gulp-uglify');
 
 var paths = {
   source: {
@@ -42,6 +43,7 @@ gulp.task('build:js', ['clean'], function () {
       .then(function () {
             return gulp.src(paths.build.all)
                 .pipe(jsFilter)
+                .pipe(uglify())
                 .pipe(rev())
                 .pipe(jsFilter.restore())
                 .pipe(revReplace())
