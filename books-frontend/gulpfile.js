@@ -1,4 +1,4 @@
-var builder = require('systemjs-builder'),
+var Builder = require('systemjs-builder'),
     del = require('del'),
     filter = require('gulp-filter'),
     gulp = require('gulp'),
@@ -30,14 +30,14 @@ gulp.task('build:html', ['clean'], function () {
 });
 
 gulp.task('build:js', ['clean'], function () {
-  builder.reset();
+  var builder = new Builder();
 
   var jsFilter = filter('**/*.js');
 
   return builder
       .loadConfig('./jspm.config.js')
       .then(function () {
-        return builder.build('books/main.jsx!', paths.build.js)
+        return builder.buildSFX('books/main.jsx!', paths.build.js)
       })
       .then(function () {
             return gulp.src(paths.build.all)
