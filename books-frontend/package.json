@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "systemjs": "^0.15"
+  },
+  "devDependencies": {
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-filter": "^2.0.2",
+    "gulp-rev": "^3.0.1",
+    "gulp-rev-napkin": "^0.1.0",
+    "gulp-rev-replace": "^0.4.0",
+    "gulp-uglify": "^1.1.0",
+    "jspm": "^0.14",
+    "systemjs-builder": "^0.9.1"
+  },
+  "jspm": {
+    "directories": {
+      "lib": "src/js"
+    },
+    "configFile": "jspm.config.js",
+    "dependencies": {
+      "jsx": "github:floatdrop/plugin-jsx@^1.0.1",
+      "react": "npm:react@^0.12.2"
+    }
+  }
+}
