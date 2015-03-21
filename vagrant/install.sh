@@ -22,4 +22,5 @@ sudo service nginx restart
 cd /books/frontend
 npm install
 $(npm bin)/jspm install
+$(npm bin)/gulp build
 cd /
