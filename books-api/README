@@ -1,0 +1,32 @@
+API
+
+    GET questions/
+        curl -i -X GET localhost:8080/questions
+
+    GET questions/mostRecent
+        curl -i -X GET localhost:8080/questions/mostRecent
+
+    GET questions/:id
+        curl -i -X GET localhost:8080/questions/123
+
+    POST questions/
+        curl -i -H "Content-Type:application/json" -d '{"content": "How are you?"}' -X POST localhost:8080/questions
+    
+    POST questions/:id/answers/
+        curl -i -H "Content-Type:application/json" -d '{"content": {"title": "W Pustyni i w Puszczy", "title": "Henryk Sienkiewicz"}}' -X POST localhost:8080/questions/123/answers
+
+    POST questions/:id/votes/
+
+    POST answers/:id/votes/
+
+    GET users/:id/answers/
+    
+    GET books/:id
+        curl -i -X GET localhost:8080/books/1
+
+    POST login/:username
+    POST logout/:id
+
+    #GET questions/:id/answers/
+
+
